@@ -238,21 +238,79 @@ function start () {
 }
 
 
+// function rotateRico() {
+//     var image = document.getElementById('ricoPiece');
+//     var currentSrc = image.src;
+
+//     if (currentSrc.includes("img/rico.jpg")) {
+//         image.src = "img/ricor.jpg";
+//     } else {
+//         image.src = "img/rico.jpg";
+//     }
+// }
+
+
+// function ricoClick(){
+//     console.log("rico clicked!");
+
+// }
+
+
+
 function rotateRico() {
-    var image = document.getElementById('ricoPiece');
-    var currentSrc = image.src;
-
-    if (currentSrc.includes("img/rico.jpg")) {
-        image.src = "img/ricor.jpg";
-    } else {
-        image.src = "img/rico.jpg";
-    }
-}
-
-
+    document.getElementById('rotate-button').classList.add('rotated');
+  }
   
+  function ricoWhiteClick() {
+    var image = document.getElementById('ricoPiece');
+  
+    var rotateButton = document.getElementById('rotate-button');
+    if (rotateButton.classList.contains('rotated')) {
+        image.src = image.src.includes("img/rico.jpg") ? "img/ricor.jpg" : "img/rico.jpg";
+        rotateButton.classList.remove('rotated');
+    }
+  }
+  
+  function ricoWhiteClick2() {
+    var image = document.getElementById('ricoPiece2');
+  
+    var rotateButton = document.getElementById('rotate-button');
+    if (rotateButton.classList.contains('rotated')) {
+        image.src = image.src.includes("img/rico.jpg") ? "img/ricor.jpg" : "img/rico.jpg";
+        rotateButton.classList.remove('rotated');
+    }
+  }
 
+  function ricoBlackClick() {
+    var image = document.getElementById('ricobPiece');
+  
+    var rotateButton = document.getElementById('rotate-button');
+    if (rotateButton.classList.contains('rotated')) {
+        image.src = image.src.includes("img/ricob.jpg") ? "img/ricobr.jpg" : "img/ricob.jpg";
+        rotateButton.classList.remove('rotated');
+    }
+  }
 
+  function ricoBlackClick2() {
+    var image = document.getElementById('ricobPiece2');
+  
+    var rotateButton = document.getElementById('rotate-button');
+    if (rotateButton.classList.contains('rotated')) {
+        image.src = image.src.includes("img/ricob.jpg") ? "img/ricobr.jpg" : "img/ricob.jpg";
+        rotateButton.classList.remove('rotated');
+    }
+  }
+
+  function semiRicoWhiteClick() {
+    var image = document.getElementById('semiRicoPiece');
+  
+    var rotateButton = document.getElementById('rotate-button');
+    if (rotateButton.classList.contains('rotated')) {
+        image.src = image.src.includes("img/semi-rico.jpg") ? "img/semi-ricor.jpg" : "img/semi-rico.jpg";
+        rotateButton.classList.remove('rotated');
+    }
+  }
+  
 
 
 
