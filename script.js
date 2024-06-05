@@ -310,9 +310,37 @@ function rotateRico() {
         rotateButton.classList.remove('rotated');
     }
   }
+
+  function semiRicoWhiteClick2() {
+    var image = document.getElementById('semiRicoPiece2');
   
+    var rotateButton = document.getElementById('rotate-button');
+    if (rotateButton.classList.contains('rotated')) {
+        image.src = image.src.includes("img/semi-rico.jpg") ? "img/semi-ricor.jpg" : "img/semi-rico.jpg";
+        rotateButton.classList.remove('rotated');
+    }
+  }
 
+  function semiRicoBlackClick() {
+    var image = document.getElementById('semiRicoBlackPiece');
+  
+    var rotateButton = document.getElementById('rotate-button');
+    if (rotateButton.classList.contains('rotated')) {
+        image.src = image.src.includes("img/semi-ricob.jpg") ? "img/semi-ricobr.jpg" : "img/semi-ricob.jpg";
+        rotateButton.classList.remove('rotated');
+    }
+  }
 
+  function semiRicoBlackClick2() {
+    var image = document.getElementById('semiRicoBlackPiece2');
+  
+    var rotateButton = document.getElementById('rotate-button');
+    if (rotateButton.classList.contains('rotated')) {
+        image.src = image.src.includes("img/semi-ricob.jpg") ? "img/semi-ricobr.jpg" : "img/semi-ricob.jpg";
+        rotateButton.classList.remove('rotated');
+    }
+  }
+  
 
 
 // rotBtn.onclick()
